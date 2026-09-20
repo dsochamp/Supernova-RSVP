@@ -68,6 +68,7 @@ body {
     padding-right: 10px;
     border-radius: 15px;
     corner-shape: squircle;
+    border: 2px inset rgb(119, 10, 156);
 }
 
 
@@ -101,6 +102,7 @@ body {
     border-radius: 15px;
     justify-self: center;
     transition: box-shadow 0.5s ease-in-out;
+    border: rgb(124, 124, 77) solid 2px;
 }
 
 #brief:hover {
@@ -144,12 +146,6 @@ body {
     padding: 1.25rem;
     border: 2px solid rgb(67, 82, 105);
     border-radius: 25px;
-    background: #fffefe20;
-    background: hsl(0 0% 0% / var(--glass-frost, 0));
-    -webkit-backdrop-filter: var(--filter-id,url(#glass-filter))saturate(var(--glass-saturation,1));
-    backdrop-filter: var(--filter-id, url(#glass-filter)) saturate(var(--glass-saturation, 1));
-    box-shadow: inset 0 0 2px 1px #ffffff59, inset 0 0 10px 4px #ffffff26, inset 0 4px 16px #11111a0d, inset 0 8px 24px #11111a0d, inset 0 6px 56px #11111a0d;
-    box-shadow: inset 0 0 2px 1px lab(100% 0 0 / .35), inset 0 0 10px 4px lab(100% 0 0 / .15), inset 0 4px 16px lab(5.32203% 1.61424 -5.88284 / .0509804), inset 0 8px 24px lab(5.32203% 1.61424 -5.88284 / .0509804), inset 0 6px 56px lab(5.32203% 1.61424 -5.88284 / .0509804);
     corner-shape: squircle;
 }
 
@@ -169,4 +165,83 @@ body {
     #ushipweship {
         grid-template-columns: 1fr;
     }
+}
+
+.liquidglass {
+    background: #fffefe20;
+    background: hsl(0 0% 0% / var(--glass-frost, 0));
+    -webkit-backdrop-filter: var(--filter-id,url(#glass-filter))saturate(var(--glass-saturation,1));
+    backdrop-filter: var(--filter-id, url(#glass-filter)) saturate(var(--glass-saturation, 1));
+    box-shadow: inset 0 0 2px 1px #ffffff59, inset 0 0 10px 4px #ffffff26, inset 0 4px 16px #11111a0d, inset 0 8px 24px #11111a0d, inset 0 6px 56px #11111a0d;
+    box-shadow: inset 0 0 2px 1px lab(100% 0 0 / .35), inset 0 0 10px 4px lab(100% 0 0 / .15), inset 0 4px 16px lab(5.32203% 1.61424 -5.88284 / .0509804), inset 0 8px 24px lab(5.32203% 1.61424 -5.88284 / .0509804), inset 0 6px 56px lab(5.32203% 1.61424 -5.88284 / .0509804);
+}
+
+#shop {
+    height: 100vh;
+    margin: 0;
+    background-image: url('Images/shop.png');
+    background-repeat: no-repeat;
+    background-size: cover;
+    justify-items: center;
+}
+
+#shop h2 {
+    font-size: clamp(3rem, 6vw, 4rem);
+    font-family: 'IntroRust';
+    color: whitesmoke;
+    font-weight: 100;
+    padding-top: 10vh;
+}
+
+#shop p {
+    font-family: 'Manrope', sans-serif;
+    color: whitesmoke;
+}
+
+#rate {
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+    white-space: nowrap;
+    text-align: left;
+    justify-content: center;
+}
+
+#carousel {
+    height: 60vh;
+    background-color:#fff6cd;
+    width: 60vw;
+    justify-items: center;
+    border-radius: 25px;
+    corner-shape: squircle;
+    border: 2px inset #ced570;
+}
+
+#carousel p {
+    color: rgb(0, 42, 106);
+    padding-top: 20vh;
+}
+
+#currency {
+    display: inline-block;
+    height: 40px;
+    vertical-align: middle;
+    filter: drop-shadow(0 0 10px white);
+}
+
+#howitworks{
+    height: 100vh;
+    background-image: url('Images/howitworks.png');
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+#howitworks h2 {
+    font-size: clamp(3rem, 6vw, 4rem);
+    font-family: 'IntroRust';
+    color: whitesmoke;
+    font-weight: 100;
+    padding-top: 10vh;
+    display: flex;
+    justify-self: center;
 }
