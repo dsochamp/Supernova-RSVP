@@ -18,12 +18,6 @@ h1, h2, h3, h4, h5, h6 {
 body {
     margin: 0;
     padding: 0;
-    background-image: url('Images/bg.png');
-    background-position: top center;
-    background-repeat: no-repeat;
-    background-size: contain;
-    z-index: 0;
-    background-repeat: no-repeat;
 }
 
 body * {
@@ -47,6 +41,11 @@ body {
     place-items: center;
     background-size: contain;
     background-position: center;
+    background-image: url('Images/bg.png');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    margin: auto;
 }
 
 #hero h1 {
